@@ -1,0 +1,96 @@
+.caja-contenido{
+    flex: 1;
+    background-color: #f1f5f9;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d1e41;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.box{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.box input{
+    padding: 10px 14px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: border-color .2s,box-shadow .2s;
+    outline: none;
+}
+.box button{
+    background-color: #04093583;
+    color: #fff;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.buscador {
+    display: flex;
+    justify-content: center; 
+    margin: 15px; 
+}
+
+.buscador input {
+    width: 100%;        
+    max-width: 500px;   
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+.tablaborde{
+    overflow-x: auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: .75rem;
+    box-shadow: 0 0 6px #0000000d;
+}
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; 
+}
+
+.th th{
+    background-color: #e5edf5;
+    color: #374151;
+    text-align: left;
+}
+td, th{
+    padding: 10px;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid #acacb4; /* Línea entre filas */
+
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1109px){
+.caja-contenido{
+    padding: 6rem 1.5rem;
+}
+}
+@media (max-width: 600px){
+    .buscador input{
+        width: auto;
+    }
+}

@@ -1,0 +1,151 @@
+.caja-contenido{
+    flex: 1;
+    width: 100%;
+    background-color: #f1f5f9;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.encabezado h1{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0d1e41;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.botones{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.encabezado button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    margin-left: 15px;
+    outline: none;
+}
+.btncrear{
+    background: rgb(1, 34, 34);
+}
+.btnclase{
+    background: rgb(12, 2, 39);
+}
+.btnmovimiento{
+    background: rgb(13, 1, 20);
+}
+
+
+.buscador {
+    display: flex;
+    justify-content: center; 
+    margin: 15px;
+}
+
+.buscador input {
+    width: 100%;        
+    max-width: 500px;   
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.tablaborde{
+    overflow-x: auto;
+    background: #fff;
+    padding: 1rem;
+    border-radius: .75rem;
+    box-shadow: 0 0 6px #0000000d;
+}
+.tabla{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; 
+}
+
+.th th{
+    background-color: #e5edf5;
+    color: #374151;
+    text-align: left;
+}
+td, th{
+    padding: 10px;
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid #acacb4; /* Línea entre filas */
+
+}
+
+/*RESPONSIVE*/
+@media (max-width: 1109px){
+.caja-contenido{
+    padding: 6rem 1.5rem;
+}
+
+/*BOTONES*/
+.encabezado{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.botones{
+    margin-top: 1rem;
+}
+
+.botones button{
+    margin-left: 0;
+    margin-right: 10px;
+}
+}
+
+
+@media (max-width: 628px){
+
+.encabezado{
+    width: auto;
+}
+.btncrear,
+.btnclase{
+    width: 47%;
+}
+.btnmovimiento{
+    width: 100%;
+    margin-top: 0.5rem;
+}
+}
+
+
+@media (max-width: 504px){
+.encabezado{
+    width: 100%;
+}    
+.botones{
+    display: block;
+}
+.botones button{
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+.btnmovimiento{
+    margin-top: 0;
+}
+}
+
+@media (max-width: 375px){
+
+}

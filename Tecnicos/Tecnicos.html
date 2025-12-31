@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnicos</title>
+    <link rel="stylesheet" href="../global/Style.css">
+    <link rel="stylesheet" href="tecnicos.css">
+    <link rel="preload" as="image" href="../global/foto1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    
+
+</head>
+<body>
+    <button class="menu-btn" id="menuBtn">☰</button>
+    <div class="fondo_menu">
+        <div class="Menu-container">
+            <a class="logo" href="../index.html">
+                <img src="../global/Logo.png" alt="Inventario ABD">
+            </a> 
+            <nav class="lista">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="../Componentes/Componentes.html">Componentes</a></li>
+                <li><a href="../Unidad_de_proceso/Unidad de Proceso.html">Unidad de Proceso</a></li>
+                <li><a href="../Entradas_y_salidas/Entradas y salidas.html">Entradas y salidas</a></li>
+                <li><a href="../Tecnicos/Tecnicos.html">Técnicos</a></li>
+                <li><a href="">Sesión cerrada</a></li>
+            </nav>
+        </div>
+    </div>
+
+    <div class="caja-contenido">
+        <header class="encabezado">
+            <h1><i class="bi bi-person-circle"></i> Técnicos</h1>
+            <button class="boton" onclick="btnCrear()"><i class="bi bi-person-fill-check"></i> Crear Técnico</button>
+        </header>
+
+        <nav class="buscador">
+            <input type="text" id="buscarTecnico" placeholder="Buscar por nombre o apellido">
+        </nav>
+        
+        <div class="tablaborde">
+            <table class="tabla" id="tablaTecnicos">
+                <tr class="th">
+                    <th>Nombre</th>
+                    <th>Acciones</th>
+                </tr>
+                <tbody id="datosTecnicos" class="datostabla">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="MODAL" id="miModal">
+        <div class="modal">
+            <h2 id="tituloModal"><i class="bi bi-person-fill-add"></i> Crear Técnico</h2>
+            <input type="text" id="nombreTecnico" placeholder="Nombre">
+            <nav class="botones">
+                <button id="btnGuardarTecnico"><i class="bi bi-person-fill-check"></i> Guardar</button>
+                <button id="btnCancelar" onclick="btnCancelar()"><i class="bi bi-person-fill-x"></i> Cancelar</button>
+            </nav>
+        </div>
+    </div>
+
+    <script type="module" src="../Scriptss/tecnicos.js"></script>
+    <script type="module" src="../Scriptss/Global.js"></script>
+
+</body>
+</html>

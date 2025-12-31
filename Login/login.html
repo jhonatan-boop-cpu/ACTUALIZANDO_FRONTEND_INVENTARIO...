@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Usuario</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="../global/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="Fondo"></div>
+        <div class="login-caja">
+            <h2>Iniciar sesion</h2>
+
+
+                <form id="loginForm">
+                    <div class="input-caja">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+                    <div class="input-caja">
+                        <input type="password" id="password" placeholder="Contraseña" required>
+                    </div>
+
+                    <div class="opciones">
+                        <label>
+                            <input type="checkbox" id="remember"> Recordar usuario
+                        </label>
+                        <a href="../index.html">¿Olvido la contraseña?</a>
+                    </div>
+    
+                    <button type="submit" class="btn" id="loginBtn">Iniciar sesión</button>
+                </form>
+        </div>
+</body>
+<script type="module" src="../Scriptss/api.js"></script>
+<script type="module" src="../Scriptss/login.js"></script>
+</html>

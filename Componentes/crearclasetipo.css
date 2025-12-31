@@ -1,0 +1,238 @@
+.caja-contenido{
+    flex: 1;
+    width: 100%;
+    background-color: #f1f5f9;
+    padding: 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+
+}
+.btnsalir{
+    border: none;
+    border-radius: 6px;
+    font-size: 30px;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    right: 45px;
+}
+.encabezado h2{
+    color: #0d1e41;
+
+}
+.content{
+    background: white;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 100%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.content input{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    outline: none;
+}
+.tipo-row{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+.tipo-row button{
+    width: auto;
+    background-color: #dc3545;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+.btnag button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.Añadir{
+    background-color: #2563eb;
+}
+.Guardar{
+    background-color: #10b981;
+}
+/*EFECTO FLOTANTE*/
+.floating {
+    position: relative;
+}
+
+.floating input
+{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    outline: none;  /*borde negro del input*/
+    background: white;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.floating label{
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    color: #888;
+    transition: .3s;
+    background: white;
+    padding: 0 4px;
+    pointer-events: none;
+    font-size: 14px
+}
+.floating input:focus,
+.floating input:not(:placeholder-shown)
+
+{
+    border-color: #659ed3;
+}
+.floating input:focus + label,
+.floating input:not(:placeholder-shown) + label
+
+{
+    top: -2px;
+    left: 8px;
+    font-size: 12px;
+    color: #659ed3; 
+}
+
+
+/*CARGAR CLASE Y TIPO*/
+.clase-box {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.clase-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 6px;
+    margin-bottom: 4px;
+    background: #f8f8f8;
+}
+
+.btn-eliminar-clase {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tipos-lista {
+    margin-top: 8px;
+}
+.tipo-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+.tipos-lista.hidden {
+    display: none;
+}
+
+/*STYLE DE CLASE.JS*/
+/* Botón de expandir/cerrar ▼ ▲ */
+.btn-toggle {
+    background: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+
+/* === Lista de tipos === */
+.tipos-lista {
+    padding: 12px 16px;
+    border-top: 1px solid #e0e0e0;
+    background: #fafafa;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+/* === Filas de tipo === */
+.tipo-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+}
+/* Inputs */
+.inpTipo,
+.inpNuevoTipo {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 6px;
+    background: transparent;
+}
+/* === Botones === */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.btn-eliminar-clase {
+    background: #ff4d4d;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background 0.3s; /*----*/
+    }
+
+.btn-eliminar-clase:hover {
+    background: #e60000;
+}
+
+.tipos-lista {
+    animation: aparecer 0.3s ease;
+}
+
+
+/*RESPONSIVE*/
+@media (max-width: 1109px){
+.caja-contenido{
+    padding: 6rem 1.5rem;
+}
+.btnsalir{
+    top: 110px;
+    right: 15px;
+}
+.content{
+    padding: 25px;
+}
+}

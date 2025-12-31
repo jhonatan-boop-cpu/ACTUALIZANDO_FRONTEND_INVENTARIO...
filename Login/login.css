@@ -1,0 +1,80 @@
+.Fondo {
+    background: linear-gradient(135deg, #19212c 0%, #1f252e 50%, #353c46 100%);
+
+    width: 100%;
+    height: 100%;
+}
+
+.login-caja {
+    width: 300px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    color: white;
+    border-bottom: 1px solid #ddd; /*linea*/
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.input-caja {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+.input-caja input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.opciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.opciones label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+}
+
+.opciones a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.btn {
+    background: #22c55e;
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 12px 0; 
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;  
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #16a34a;
+}
+
+/* RESPONSIVE */
+@media (max-width: 375px) {
+.login-box {
+    width: 90%;
+    overflow-x: auto;
+}
+}

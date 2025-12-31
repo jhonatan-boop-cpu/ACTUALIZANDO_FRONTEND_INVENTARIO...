@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', 'Segoe UI', sans-serif;
+    display: flex;
+    background: white;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /*OCUPA TODA LA PANTALLA*/
+    overflow: hidden; /*QUITA ESCROLL INNECESARIO*/
+}
+
+.fondo_menu{
+    background-image: url(foto1.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 18%;
+    height: auto; /*ASEGURA QUE OCUPE TODO EL ALTO DE LA PANTALLA*/
+    overflow-y: visible;
+}
+
+.Menu-container {  
+    height: 100vh;
+    border-right: 1px solid #e5e7eb ;
+    padding: 5px 10px;
+    background-color: rgba(36, 41, 46, .8);
+    overflow-y: visible; /*SI LE CONTENIDO SE ALARGA HACE SCROLL AQUI*/
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    max-width: 200px; /* Ajusta el tamaño del logo */
+    height: auto;
+    display: block;
+}
+.lista li{
+    margin-bottom: 20px;
+}
+.lista a{
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 8px;
+    color: #faf5f5;
+    transition: 0.3s;
+}
+.lista a:hover,
+.lista a.active{
+    background: #535b6b;
+    color: #fff;
+}
+
+/* BOTON HAMBURGUESA */
+.menu-btn {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    background: #444;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+/*RESPONSIVE A PARTIR DE 1000PX*/
+
+
+@media (max-width: 1109px) {
+
+body {
+    flex-direction: column; /* apilar menu y contenido xxxxx*/
+    overflow-y: auto; 
+}
+
+/* ===imagen Responsive=== */
+img { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+.menu-btn {
+    display: block;
+}
+
+.fondo_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 1000;
+    width: 220px;
+    transform: translateX(-100%); /* oculto por defecto */
+}
+
+.fondo_menu.open {
+    transform: translateX(0); /* (visible cuando se abre .open funcion js) */
+}
+
+
+/* tabla resposive */
+.tabla{
+    width: max-content;       /* ancho se adapta al contenido */
+    table-layout: auto;       /* columnas dependen del contenido */
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+}
+
+
+
+
+

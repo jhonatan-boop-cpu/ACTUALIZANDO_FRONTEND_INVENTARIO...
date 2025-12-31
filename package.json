@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "bootstrap-icons": "^1.13.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^5.1.0"
+  }
+}
